@@ -32,7 +32,7 @@ class _homeState extends State<home> {
   Widget build(BuildContext context) {
     provied pp = Provider.of<provied>(context, listen: false);
     pp.selectProduct();
-
+    //FDFDF
     return Scaffold(
       appBar: AppBar(
         // elevation: 20,
