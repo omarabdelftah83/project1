@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:path/path.dart';
 import 'package:project1/ProductModel.dart';
-import 'package:project1/widget/data_base.dart';
+import 'package:project1/database/data_base.dart';
 
 class provied extends ChangeNotifier {
+
   TextEditingController name = TextEditingController();
   TextEditingController price = TextEditingController();
   SqlDb data = SqlDb();
@@ -14,7 +15,6 @@ class provied extends ChangeNotifier {
   List<Map> listData = [];
   late String id;
   bool isAdd = true;
-
   File? image;
   final ImagePicker imagepicker = ImagePicker();
 
@@ -58,18 +58,3 @@ class provied extends ChangeNotifier {
   }
 }
 
-// addPRODUCT() {
-//    isLoding = true;
-//     notifyListeners();
-//   //{name: omar, price: 300$}
-//   final newUser = {'name': name.text.toString(), 'price': price.text.toString()};
-//   listData = [];
-//   data.SelectData().then((value) {
-//     listData = value!;
-
-//   });
-//   listData.add(newUser);
-//     isLoding = false;
-//   notifyListeners();
-//   //
-// }
