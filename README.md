@@ -1,5 +1,4 @@
-# project1
-
+# notes
 A new Flutter project.
 
 ## Getting Started
